@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #61ff8485;
+    letter-spacing: 10px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50vw;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 65px;
+
+}
+
+.wrapper > h2 {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+article {
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.slideRebus {
+    background: rgb(51, 165, 40);
+    font-size: 30px;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.slideRebus:hover {
+    cursor: pointer;
+}
+
+#rules {
+    font-size: 25px;
+    color: black;
+    padding: 20px;
+background: rgb(46, 123, 76);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.taskProgres {
+position: fixed;
+top: 40vh;
+left: 1vw;
+padding: 2.5vh;
+}
+
+.taskProgres p {
+text-align: center;
+font-size: 40px;
+margin-bottom: 10px;
+
+}
+
+#start {
+    background-color: rgb(0, 255, 98);
+    color: white;
+    width: 250px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 5px, 0;
+}
+
+#start:hover {
+    cursor: pointer;
+}
+
+.gameBoard {
+    display: grid;
+width: 100%;
+gap: 5px;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(4, 100px);
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: all;
+    transform-style: preserve-3d;
+}
+
+.front {
+    background-color: rgb(21, 123, 219);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.back {
+    backface-visibility: hidden;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.win {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.win a {
+    padding: 1rem 2rem;
+    font-size: 40px;
+    background: rgb(37, 173, 53);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
